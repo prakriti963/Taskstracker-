@@ -1,0 +1,308 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 1000px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Side - Signup Section */
+.signup-section {
+    width: 55%;
+    padding: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+   
+}
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left side - Login section */
+.login-section {
+    width: 50%;
+    padding: 40px;
+}
+
+.logo {
+    /* display: flex; */
+    /* align-items: center; */
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+.input-field {
+    background: #f1f3f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.input-field input {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #6c757d;
+    position: relative;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    top: 50%;
+}
+
+.or-divider::before {
+    left: 0;
+}
+
+.or-divider::after {
+    right: 0;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Right side - Banner section */
+.banner-section {
+    width: 50%;
+    background: linear-gradient(135deg, #41a7e1, #0087d4);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    padding: 20px;
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.banner-img {
+    position: absolute;
+    bottom: 150px;
+    right: 10px;
+    width: 350px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .login-section, .banner-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-section {
+        padding: 30px 10px;
+    }
+
+    .banner-img {
+        position: relative;
+        width: 120px;
+        margin-top: 20px;
+    }
+}
+
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;  /* Increased padding for a better look */
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Light border to match the design */
+    border-radius: 8px;  /* Rounded corners */
+    background: #f8f9fa;  /* Light gray background */
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input field focus effect */
+input:focus {
+    border-color: #007bff; /* Blue border when focused */
+    background: #fff; /* White background on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Input Group for Name Fields */
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+
+.name-group input {
+    width: 50%;
+}
+
+/* Input Group for Contact Fields */
+.contact-group {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-group input {
+    width: 50%;
+}
+
+/* Checkbox & Terms */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
